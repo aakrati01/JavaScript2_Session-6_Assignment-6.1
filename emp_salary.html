@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee salary</title> <!-- title on the page -->
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var linebreak = "<br />";
+		var salary = 16000;  		// Taking input salary 
+		var work_hr =11;
+
+		document.write(" Basic salary without bonus = " + salary);
+		document.write(linebreak);
+
+		if(salary >= 15000 && work_hr> 10)		// Checking condition for salary and working hrs 
+		{
+			salary= salary * 0.1 + salary;		// This statement will execute when both the conditions satisfy 
+			document.write("Salary with 10% bonus = " + salary);
+		} else {
+			salary= salary * 0.05 + salary;			// else will execute this
+			document.write("Salary with 5% bonus = " + salary);
+		}
+	</script>
+
+</body>
+</html>
